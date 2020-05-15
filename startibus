@@ -1,0 +1,5 @@
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+export GTK_IM_MODULE=ibus
+export LC_ALL=C
+ibus-daemon -drx
