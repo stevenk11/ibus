@@ -15,6 +15,8 @@ RUN sed -i -e "s/deb.debian/ftp.hk.debian/g" /etc/apt/sources.list \
 
 ENV LANG zh_CN.UTF-8
 ENV LC_MESSAGES en_US.UTF-8
-
-COPY startibus /usr/bin/startibus
+ENV LC_ALL=C
+ENV XMODIFIERS=@im=ibus
+ENV QT_IM_MODULE=ibus
+ENV GTK_IM_MODULE=ibus
 
